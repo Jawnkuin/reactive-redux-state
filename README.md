@@ -66,7 +66,7 @@ const mapper = createSelectorMapper(expressionSelector,listenerA,listenerB);
 
 ```
 
-If you want dispatch another action inside the listen be sure using **asynchronous functions**, otherwise endless loop will be encountered.
+If you want dispatch another action inside the listener, be sure using **asynchronous functions**, otherwise endless loop will be encountered.
 
 ```javascript
 const listenerA = (preState,nextState) => {
